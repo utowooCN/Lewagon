@@ -4,4 +4,36 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; /* if you want the light version */
+  background: #6F9191;
+}
+a {
+  color: red;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  width: 500px;   /* This sets the width */
+  margin: 0 auto; /* This automatically sets left/right margins */
+}
+.img-circle {
+  border-radius: 50%;
+}
+.text-center {
+  text-align: center;
+}
+.card-white {
+  background: white;
+  padding: 30px;
+  margin-bottom: 15px;
+  border: 1px solid lightgrey;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
 }
