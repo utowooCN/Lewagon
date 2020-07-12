@@ -5,7 +5,9 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        title: "F*** my code",
+        description: "Share your horror stories when writing code at Le Wagon",
+        cta: "Start here"
     },
 
     /**
