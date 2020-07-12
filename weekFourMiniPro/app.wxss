@@ -1,5 +1,5 @@
 /**app.wxss**/
-@import "utils/dist/style/weui.wxss"
+@import "utils/dist/style/weui.wxss";
 
 .container {
   padding: 100rpx 0;

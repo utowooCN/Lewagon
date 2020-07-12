@@ -1,2 +1,12 @@
 <!--pages/stories.wxml-->
-<text>pages/stories.wxml</text>
+<view class="banner" style="padding:20px 0px; height: 100px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.lewagon.com/api/v1/cities/shenzhen/cover?width=1200);">
+    <view class="h1">F*** my code</view>
+    <view class="p">{{tagline}}</view>
+</view>
+
+<view class="card-product">
+  <view class="card-product-infos">
+    <view class="h2">{{content}}</view>
+    <view class="p">{{name}}</view>
+  </view>
+</view>

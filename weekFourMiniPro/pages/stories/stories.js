@@ -5,7 +5,14 @@ Page({
      * 页面的初始数据
      */
     data: {
+        text: "Hello who?",
+        content: "FMC!!!",
+        name: "Yinghui",
+        tagline: "Bugs everywhere!"
+    },
 
+    clickMe: function () {
+        this.setData({ text: "Hello World" })
     },
 
     /**

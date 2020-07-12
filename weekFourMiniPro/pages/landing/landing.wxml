@@ -3,9 +3,9 @@
   <view class="container">
     <view class="h1">{{title}}</view>
     <view class="p">{{description}}</view>
-    <navigator class="btn btn-flat" url="#">
+    <button class="btn btn-flat" bindtap="goToStoriesPage">
       {{cta}}
-    </navigator>
+    </button>
   </view>
 </view>
 

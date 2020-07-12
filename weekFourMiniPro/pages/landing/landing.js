@@ -10,6 +10,12 @@ Page({
         cta: "Start here"
     },
 
+    goToStoriesPage: function() {
+        wx.navigateTo({
+          url: '/pages/stories/stories'
+        })
+      },
+
     /**
      * 生命周期函数--监听页面加载
      */
