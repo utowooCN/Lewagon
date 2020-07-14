@@ -1,4 +1,4 @@
-// pages/stories.js
+// pages/posts/posts.js
 const app = getApp();
 Page({
 
@@ -6,22 +6,29 @@ Page({
      * 页面的初始数据
      */
     data: {
-        text: "Hello who?",
-        stories: [],
-        tagline: app.globalData.tagline
-    },
 
-    clickMe: function () {
-        this.setData({ text: "Hello World" })
     },
     
-    switchToPosts: function() {
+    formSubmit: function (event) {
+
+        // DID WE GET IT?
+    
+        console.log(event.detail.value.name)
+        console.log(event.detail.value.content)
+    
+        let name = event.detail.value.name
+        let content = event.detail.value.content
+    
+        // STORING IN GLOBAL DATA
+    
+        app.globalData.stories.unshift({content, name})
+    
+        // REDIRECTING
+    
         wx.switchTab({
-          url: '/pages/posts/posts',
-          success: function(res) {},
-          fail: function(res) {},
-          complete: function(res) {},
+          url: '/pages/stories/stories',
         })
+    
       },
     /**
      * 生命周期函数--监听页面加载
@@ -41,9 +48,7 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
-        this.setData({
-            stories: app.globalData.stories
-        })
+
     },
 
     /**

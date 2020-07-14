@@ -3,7 +3,7 @@
   <view class="container">
     <view class="h1">{{title}}</view>
     <view class="p">{{description}}</view>
-    <button class="btn btn-flat" bindtap="goToStoriesPage">
+    <button class="btn btn-flat" bindtap="switchToStoriesPage">
       {{cta}}
     </button>
   </view>

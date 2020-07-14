@@ -3,7 +3,8 @@
         "pages/landing/landing",
         "pages/index/index",
         "pages/logs/logs",
-        "pages/stories/stories"
+        "pages/stories/stories",
+        "pages/posts/posts"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -11,6 +12,27 @@
         "navigationBarTitleText": "WeChat",
         "navigationBarTextStyle": "black"
     },
-    "style": "v2",
-    "sitemapLocation": "sitemap.json"
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/landing/landing",
+                "text": "Home",
+                "iconPath": "/images/home.png",
+                "selectedIconPath": "/images/home.png"
+            },
+            {
+                "pagePath": "pages/stories/stories",
+                "text": "Stories",
+                "iconPath": "/images/stories.png",
+                "selectedIconPath": "/images/stories.png"
+            },
+            {
+                "pagePath": "pages/posts/posts",
+                "text": "Post",
+                "iconPath": "/images/post.png",
+                "selectedIconPath": "/images/post.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap86.json"
 }

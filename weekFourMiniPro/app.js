@@ -34,6 +34,11 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    tagline: "bugs everywhere",
+    userId: "",
+    language: "EN",
+    stories: [
+    ]
   }
 })

@@ -1,4 +1,5 @@
 // pages/landing.js
+const app = getApp();
 Page({
 
     /**
@@ -16,6 +17,11 @@ Page({
         })
       },
 
+    switchToStoriesPage: function() {
+        wx.switchTab({
+          url: '/pages/stories/stories'
+        })
+      },
     /**
      * 生命周期函数--监听页面加载
      */

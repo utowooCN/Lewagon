@@ -4,9 +4,22 @@
     <view class="p">{{tagline}}</view>
 </view>
 
-<view class="card-product">
+<!-- USING WX:IF CONDITION IN CASE WE HAVE NOTHING TO SHOW -->
+
+<view class="card-product" wx:if="{{stories.length==0}}">
   <view class="card-product-infos">
-    <view class="h2">{{content}}</view>
-    <view class="p">{{name}}</view>
+    <view class="h2">There's nothing here yet!</view>
+    <button class="btn" bindtap="switchToPosts">Share your first FMC story</button>
   </view>
 </view>
+
+<block wx:for="{{stories}}" wx:key="" wx:for-item="story">
+
+<view class="card-product">
+  <view class="card-product-infos">
+    <view class="h2">{{story.content}}</view>
+    <view class="p">{{story.name}}</view>
+  </view>
+</view>
+
+</block>
